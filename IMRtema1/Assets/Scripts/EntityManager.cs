@@ -34,7 +34,7 @@ public class EntityManager : MonoBehaviour
 
                 if (!PairStates.ContainsKey((e1, e2)))
                     PairStates.Add((e1, e2), EntityState.idle);
-                print(Vector3.Distance(e1.transform.position, e2.transform.position));
+                //print(Vector3.Distance(e1.transform.position, e2.transform.position));
                 if(Vector3.Distance(e1.transform.position, e2.transform.position) <= attackDistance && PairStates[(e1, e2)] != EntityState.attacking)
                 {
                     e1.transform.LookAt(e2.transform);

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public abstract class Entity : MonoBehaviour
 {
+    public Vector3 lastPos;
+    public bool isWalking;
     public abstract void Walk();
     public abstract void Attack();
     public abstract void StopAttack();
